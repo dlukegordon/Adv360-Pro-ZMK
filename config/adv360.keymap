@@ -82,11 +82,11 @@
 
         layer_4 {
             bindings = <
-&trans       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)      &kp LG(NUMBER_4)       &kp LG(NUMBER_5)  &trans                                      &trans  &trans    &trans         &trans        &trans     &trans  &trans
-&kp LG(TAB)  &trans            &trans            &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans            &trans                                      &trans  &trans    &trans         &trans        &trans     &trans  &trans
-&trans       &kp TILDE         &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans            &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans       &trans            &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                            &trans      &trans                  &trans    &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &trans
-&trans       &trans            &trans            &trans                &trans                                   &trans  &trans  &trans      &trans  &trans  &trans            &trans         &trans        &trans     &trans  &trans
+&trans       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)      &kp LG(NUMBER_4)       &kp LG(NUMBER_5)  &trans                                         &trans     &trans    &trans         &trans        &trans     &trans  &trans
+&kp LG(TAB)  &trans            &trans            &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans            &trans                                         &trans     &trans    &trans         &trans        &trans     &trans  &trans
+&trans       &kp TILDE         &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans            &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans       &trans            &trans            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                            &trans      &trans                        &trans    &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &trans
+&trans       &trans            &trans            &trans                &trans                                   &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE            &trans         &trans        &trans     &trans  &trans
             >;
         };
     };
