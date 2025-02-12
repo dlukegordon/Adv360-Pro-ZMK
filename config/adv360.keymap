@@ -115,7 +115,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                                      &none             &trans  &trans  &trans  &trans  &trans   &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans             &trans      &none             &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &kp C_VOLUME_UP                                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_PLAY_PAUSE          &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_PLAY_PAUSE          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
