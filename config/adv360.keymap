@@ -10,9 +10,9 @@
         #include "macros.dtsi"
       #include "version.dtsi"
 
-        hml: homerow_mods {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HML";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
@@ -23,15 +23,54 @@
             hold-trigger-key-positions = <37 38 53 68 69 70 7 8 10 9 11 12 13 27 26 25 24 23 22 21 39 40 41 42 43 44 45 54 55 56 57 58 71 73 56 57 58 59 72 73 74 75>;
         };
 
-        hmy: homerow_mods_layer {
+        hmy: hmy {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LAYER";
+            label = "HMY";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <150>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+        };
+
+        hmyl: hmyl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMYL";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 7 8 9 10 11 21 22 23 24 25>;
+        };
+
+        hmyr: hmyr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMYR";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
         };
     };
 
@@ -43,7 +82,7 @@
             bindings = <
 &kp GRAVE  &kp N1           &kp N2           &kp N3               &kp N4     &kp N5  &tog 1                                                                              &mo 3         &kp N6  &kp N7          &kp N8                &kp N9            &kp N0               &kp MINUS
 &kp TAB    &kp Q            &kp W            &kp E                &kp R      &kp T   &none                                                                               &none         &kp Y   &kp U           &kp I                 &kp O             &kp P                &kp BSLH
-&kp ESC    &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hmy 4 F   &kp G   &none          &kp LEFT_GUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp LEFT_GUI  &none         &kp H   &hmy 4 J        &hml RIGHT_CONTROL K  &hml RIGHT_GUI L  &hml RIGHT_ALT SEMI  &kp SQT
+&kp ESC    &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hmyl 4 F  &kp G   &none          &kp LEFT_GUI  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp LEFT_GUI  &none         &kp H   &hmyr 4 J       &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &hmr RIGHT_ALT SEMI  &kp SQT
 &kp LSHFT  &kp Z            &kp X            &kp C                &kp V      &kp B                                &kp HOME              &kp PG_UP                                      &kp N   &kp M           &kp COMMA             &kp DOT           &kp FSLH             &kp RSHFT
 &mo 2      &kp GRAVE        &kp CAPS         &kp LEFT             &kp RIGHT          &kp BACKSPACE  &kp DEL       &kp END               &kp PG_DN          &kp ENTER     &hmy 4 SPACE          &kp DOWN_ARROW  &kp UP_ARROW          &kp LBKT          &kp RBKT             &mo 2
             >;
@@ -84,11 +123,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans            &trans             &trans                &trans                 &trans             &trans                                      &trans  &trans    &trans         &trans        &trans     &trans  &trans
-&trans  &kp PLUS          &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND      &trans                                      &trans  &trans    &trans         &trans        &trans     &trans  &trans
-&trans  &kp MINUS         &kp UNDERSCORE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp ASTERISK                       &trans      &trans                  &trans    &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &trans
-&trans  &trans            &trans             &trans                &trans                                    &trans  &trans  &trans      &trans  &trans  &trans            &trans         &trans        &trans     &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans             &trans                                      &trans  &trans  &trans         &trans        &trans         &trans  &trans
+&trans  &kp PLUS          &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND      &trans                                      &trans  &trans  &kp PAGE_UP    &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
+&trans  &kp MINUS         &kp UNDERSCORE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT       &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp ASTERISK                       &trans      &trans                  &trans  &kp PAGE_DOWN  &kp PAGE_UP   &trans         &trans  &trans
+&trans  &trans            &trans             &trans                &trans                                    &trans  &trans  &trans      &trans  &trans  &trans          &trans         &trans        &trans         &trans  &trans
             >;
         };
     };
