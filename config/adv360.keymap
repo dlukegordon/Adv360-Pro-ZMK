@@ -15,7 +15,7 @@
             label = "HML";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
 
             require-prior-idle-ms = <150>;
@@ -28,7 +28,7 @@
             label = "HMY";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <150>;
@@ -39,7 +39,7 @@
             label = "HMR";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
 
             require-prior-idle-ms = <150>;
@@ -52,7 +52,7 @@
             label = "HMYL";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <150>;
@@ -65,7 +65,7 @@
             label = "HMYR";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <150>;
@@ -117,7 +117,7 @@
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_DEC  &bl BL_INC  &none  &none  &none
             >;
         };
 
